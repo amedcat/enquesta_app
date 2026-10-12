@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquesta de satisfacció</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%E2%AD%90%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Enquesta de satisfacció</h1>
+      <p>La teva opinió ens ajuda a millorar. Només et prendrà un minut.</p>
+    </header>
+
+    <div id="errors" class="error-box" hidden role="alert"></div>
+
+    <form id="survey" novalidate>
+      <div id="questions"><p class="empty">Carregant preguntes…</p></div>
+      <button type="submit" id="submit">Enviar respostes</button>
+    </form>
+
+    <section id="thanks" class="card thanks" hidden>
+      <div class="icon" aria-hidden="true">🙏</div>
+      <h2>Gràcies per la teva resposta!</h2>
+      <p>Hem rebut la teva valoració correctament.</p>
+    </section>
+  </main>
+  <script src="survey.js"></script>
+</body>
+</html>
